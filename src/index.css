@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: 1000px;
+}
+
+.logo {
+  width: 500px;
+  height: 280x;
+  padding-bottom: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 200px;
+  
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding-top: 40px;
+
+}
+
+.card {
+  cursor: pointer;
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.search {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+input[type='text'] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 12px;
+  width: 100%;
+  margin: auto;
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  background: #2e41bd;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  /* padding-top: 10px; */
+  /* margin: 5px; */
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.spinner img {
+  width: 50px;
 }
